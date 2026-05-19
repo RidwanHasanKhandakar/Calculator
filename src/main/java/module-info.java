@@ -1,6 +1,7 @@
 module com.example.class_19th {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.example.class_19th to javafx.fxml;
