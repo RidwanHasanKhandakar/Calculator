@@ -4,19 +4,36 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="266.0" prefWidth="403.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.class_19th.ArithmeticOPController">
+<AnchorPane prefHeight="266.0" prefWidth="403.0" style="-fx-background-color: aqua; -fx-border-color: red;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.class_19th.ArithmeticOPController">
    <children>
       <TextField fx:id="firstNumTextField" layoutX="189.0" layoutY="31.0" />
       <TextField fx:id="secondNumTextField" layoutX="189.0" layoutY="71.0" />
       <Text layoutX="66.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a number: " />
       <Text layoutX="66.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a number: " />
-      <Button layoutX="116.0" layoutY="133.0" mnemonicParsing="false" onAction="#handlePlusButton" text="+" />
-      <Button layoutX="163.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleMinusButton" text="-" />
-      <Button layoutX="225.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleMultipleButton" text="*" />
-      <Button layoutX="286.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleDivideButton" text="/" />
-      <TextArea fx:id="resTextArea" layoutX="63.0" layoutY="168.0" prefHeight="75.0" prefWidth="276.0" promptText="Answer: " />
+      <Button layoutX="46.0" layoutY="120.0" mnemonicParsing="false" onAction="#handlePlusButton" style="-fx-background-color: black;" text="Add" textFill="AQUA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="110.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleMinusButton" style="-fx-background-color: black;" text="Subtract" textFill="AQUA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="212.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleMultipleButton" style="-fx-background-color: black;" text="Multiply" textFill="AQUA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="312.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleDivideButton" style="-fx-background-color: black;" text="Divide" textFill="AQUA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="resTextArea" editable="false" layoutX="63.0" layoutY="168.0" prefHeight="75.0" prefWidth="276.0" promptText="Answer: " />
    </children>
 </AnchorPane>
