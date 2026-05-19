@@ -4,15 +4,22 @@ import javafx.event.ActionEvent;
 
 public class ArithmeticOPController {
 
+public void initialize(){
+
+}
     public void handlePlusButton(ActionEvent actionEvent) {
+
     }
 
     public void handleMinusButton(ActionEvent actionEvent) {
+
     }
 
     public void handleMultipleButton(ActionEvent actionEvent) {
+
     }
 
     public void handleDivideButton(ActionEvent actionEvent) {
+
     }
 }
