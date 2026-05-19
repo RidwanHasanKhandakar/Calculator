@@ -3,10 +3,12 @@ package com.example.class_19th;
 import javafx.event.ActionEvent;
 
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class ArithmeticOPController {
 
+    public TextArea answerTextArea;
     @javafx.fxml.FXML
     private TextField firstNumTextField;
     @javafx.fxml.FXML
@@ -22,7 +24,7 @@ public class ArithmeticOPController {
     int firstNum = Integer.parseInt(firstNumTextField.getText());
     int secondNum = Integer.parseInt(secondNumTextField.getText());
     int answer = firstNum+secondNum;
-    errorLabel.setText("firstNum + secondNum = " + answer);
+    answerTextArea.setText("firstNum + secondNum = " + answer);
     //resTextArea.setText("Answer: "+answer);
     }
 
@@ -31,7 +33,7 @@ public class ArithmeticOPController {
         int firstNum = Integer.parseInt(firstNumTextField.getText());
         int secondNum = Integer.parseInt(secondNumTextField.getText());
         int answer = firstNum-secondNum;
-        errorLabel.setText("firstNum - secondNum = " + answer);
+        answerTextArea.setText("firstNum - secondNum = " + answer);
 
     }
 
@@ -40,7 +42,7 @@ public class ArithmeticOPController {
         int firstNum = Integer.parseInt(firstNumTextField.getText());
         int secondNum = Integer.parseInt(secondNumTextField.getText());
         int answer = firstNum*secondNum;
-        errorLabel.setText("firstNum * secondNum = " + answer);
+        answerTextArea.setText("firstNum * secondNum = " + answer);
 
     }
 
@@ -49,7 +51,7 @@ public class ArithmeticOPController {
         int firstNum = Integer.parseInt(firstNumTextField.getText());
         int secondNum = Integer.parseInt(secondNumTextField.getText());
         int answer = firstNum/secondNum;
-        errorLabel.setText("firstNum / secondNum = " + answer);
+        answerTextArea.setText("firstNum / secondNum = " + answer);
 
     }
 }
