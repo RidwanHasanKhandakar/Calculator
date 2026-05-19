@@ -7,11 +7,11 @@ import java.awt.*;
 public class ArithmeticOPController {
 
     @javafx.fxml.FXML
-    private TextArea resTextArea;
-    @javafx.fxml.FXML
     private TextField firstNumTextField;
     @javafx.fxml.FXML
     private TextField secondNumTextField;
+    @javafx.fxml.FXML
+    private Label errorLabel;
 
     public void initialize(){
 
@@ -21,7 +21,8 @@ public class ArithmeticOPController {
     int firstNum = Integer.parseInt(firstNumTextField.getText());
     int secondNum = Integer.parseInt(secondNumTextField.getText());
     int answer = firstNum+secondNum;
-    resTextArea.setText("Answer: "+answer);
+    errorLabel.setText("firstNum + secondNum");
+    //resTextArea.setText("Answer: "+answer);
     }
 
     @javafx.fxml.FXML
