@@ -24,7 +24,7 @@ public class ArithmeticOPController {
     int firstNum = Integer.parseInt(firstNumTextField.getText());
     int secondNum = Integer.parseInt(secondNumTextField.getText());
     int answer = firstNum+secondNum;
-    answerTextArea.setText("firstNum + secondNum = " + answer);
+        answerTextArea.setText(String.format("%d + %d = %d" , firstNum,secondNum,answer));
     //resTextArea.setText("Answer: "+answer);
     }
 
@@ -33,7 +33,7 @@ public class ArithmeticOPController {
         int firstNum = Integer.parseInt(firstNumTextField.getText());
         int secondNum = Integer.parseInt(secondNumTextField.getText());
         int answer = firstNum-secondNum;
-        answerTextArea.setText("firstNum - secondNum = " + answer);
+        answerTextArea.setText(String.format("%d - %d = %d" , firstNum,secondNum,answer));
 
     }
 
@@ -42,16 +42,16 @@ public class ArithmeticOPController {
         int firstNum = Integer.parseInt(firstNumTextField.getText());
         int secondNum = Integer.parseInt(secondNumTextField.getText());
         int answer = firstNum*secondNum;
-        answerTextArea.setText("firstNum * secondNum = " + answer);
+        answerTextArea.setText(String.format("%d x %d = %d" , firstNum,secondNum,answer));
 
     }
 
     @javafx.fxml.FXML
     public void handleDivideButton(ActionEvent actionEvent) {
-        int firstNum = Integer.parseInt(firstNumTextField.getText());
-        int secondNum = Integer.parseInt(secondNumTextField.getText());
-        int answer = firstNum/secondNum;
-        answerTextArea.setText("firstNum / secondNum = " + answer);
+        double firstNum = Integer.parseInt(firstNumTextField.getText());
+        double secondNum = Integer.parseInt(secondNumTextField.getText());
+        double answer = firstNum/secondNum;
+        answerTextArea.setText(String.format("%f / %f = %f" , firstNum,secondNum,answer));
 
     }
 }
