@@ -8,7 +8,7 @@ public void initialize(){
 
 }
     public void handlePlusButton(ActionEvent actionEvent) {
-    int firstNum = Integer.parseInt();
+    //int firstNum = Integer.parseInt();
     }
 
     public void handleMinusButton(ActionEvent actionEvent) {
